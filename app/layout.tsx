@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "./Providers";
-import Navbar from "@/components/header/Navbar";
+import Header from "@/components/header/Header";
 
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <Providers>
-          <Navbar />
+          <Header />
         {children}
         </Providers>
       </body>
